@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The cochinet - The game</title>
+        <link rel="shortcut icon" href="./static/icon.png"/>
+        <link rel="stylesheet" href="./static/style.css">
+    </head>
+    <body bgcolor="#1C1C1C" class="login">
+        <div id="login" align='center' >
+            <div> <img src="./static/logo.png" id="logo" onclick="animateLogo()"> </div>
+            <p>Name: <input type="text" required id="name"></p>
+            <div><img src="./static/B.png" id="separator" /></div>
+            <div> 
+                <select type="button" class="modebutton" id="mode">
+                    <option value=0 selected>Select mode </option>
+                    <option value=1> Easy </option>
+                    <option value=2> Hard </option>
+                </select>
+            </div>
+            <div><img src="./static/B.png" id="separator" /></div>
+            <div> 
+                <input type="range" class="slider" id="rounds" value="1" min="1" max="30" oninput="document.getElementById('showRounds').innerHTML = this.value" />
+                <label class="showRounds" id="showRounds">1
+            </div>
+            <div><img src="./static/B.png" id="separator" /></div>
+            <div> <button class="playbutton" onclick="startGame()">PLAY</button> </div>
+        </div>
+        <div id="game" align='center'>
+            <div>
+                <p class="letterScore">AI User</p>
+            </div>
+            <div class="score">
+                <a id="score1" >0</a>
+                <a id="score2" >0</a>
+            </div>
+            <div>
+                <button class="buttonDecision" onclick="userValue=1; play()">1</button>
+                <button class="buttonDecision" onclick="userValue=0; play()">0</button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./static/game.js"></script>
+    </body>
+</html>

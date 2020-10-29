@@ -1,0 +1,135 @@
+body { 
+font-family: arial, verdana, sans-serif;
+color: #e2e2e2;
+}
+
+#logo {
+width:500px ;
+height:500px;
+margin-top: -20px;
+margin-bottom: -80px;
+}
+
+#name {
+inline-size: 200px;
+font-size: 20px;
+}
+
+#lowseparator {
+height: 1px;
+}
+
+#separator {
+height: 35px;
+}
+
+.showRounds{
+font-size: 30px;
+margin-left: 50px;
+margin-bottom: 220px;
+}
+
+.letterScore{
+font-size: 100px;
+word-spacing: 300px;
+margin-left: 85px;
+}
+
+.score {
+font-size: 100px;
+word-spacing: 400px;
+margin-left: 25px;
+}
+
+.playbutton {
+display: inline-block;
+padding: 15px 25px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: rgb(130, 165, 219);
+border: none;
+border-radius: 15px;
+box-shadow: 0 5px #999;
+}
+
+.playbutton:hover {
+background-color: rgb(130, 165, 219);
+}
+
+.playbutton:active {
+background-color: rgb(130, 165, 219);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.buttonDecision{
+margin-top: 100px;
+display: inline-block;
+padding: 15px 25px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+}
+
+.modebutton {
+display: inline-block;
+padding: 15px 25px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: rgb(130, 165, 219);
+border: none;
+border-radius: 15px;
+box-shadow: 0 5px #999;
+}
+
+.modebutton:hover 
+{background-color: rgb(130, 165, 219)
+}
+
+.modebutton:active {
+background-color: rgb(130, 165, 219);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.slider {
+-webkit-appearance: none;
+appearance: none;
+width: 20%; 
+height: 25px;
+background: #d3d3d3;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s; 
+transition: opacity .2s;
+}
+
+.slider:hover {
+opacity: 1; 
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none; 
+appearance: none;
+width: 25px;
+height: 25px; 
+background: #4CAF50;
+cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px; 
+background: #4CAF50; 
+cursor: pointer; 
+}
